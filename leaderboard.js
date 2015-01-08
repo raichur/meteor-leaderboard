@@ -1,6 +1,5 @@
 PlayersList = new Mongo.Collection('players');
 
-
 if(Meteor.isClient){
 
   Template.leaderboard.helpers({
@@ -52,4 +51,10 @@ if(Meteor.isClient){
       });
     }
   });
+}
+
+if(Meteor.isServer){
+    Meteor.publish('thePlayers', function(){
+      return PlayersList.find();
+    });
 }
