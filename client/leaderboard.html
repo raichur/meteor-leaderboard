@@ -4,7 +4,9 @@
 <body>
   <h1>Leaderboard</h1>
   {{> loginButtons}}
+  {{#if currentUser}}
   {{> leaderboard}}
+  {{/if}}
 </body>
 
 <!--Ahhh-->

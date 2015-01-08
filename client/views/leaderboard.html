@@ -1,7 +1,4 @@
 <template name="leaderboard">
-  {{#if showSelectedPlayer}}
-  <li>Selected Player: {{showSelectedPlayer.name}}</li>
-  {{/if}}
   <ul>
     {{#each player}}
     <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
