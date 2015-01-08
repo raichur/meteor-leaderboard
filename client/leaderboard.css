@@ -28,6 +28,7 @@ h1 {
   font-weight: 600;
 }
 .content input {
+  -webkit-appearance: none;
   font-weight: 800;
   border: none;
   font-size: 1.2rem;
