@@ -13,8 +13,7 @@ h1 {
   font-size: 4rem;
 }
 #login-buttons {
-  float: right;
-  margin-top: -30px;
+  text-align: left;
 }
 .content li {
   list-style: none;
@@ -53,13 +52,23 @@ h1 {
   background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
-
+.content .player_list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .content input[type="text"]:focus {
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .content input {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
